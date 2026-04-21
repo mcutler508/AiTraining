@@ -8,9 +8,9 @@ export function Marquee() {
           FLOW<span className="text-[var(--color-ink-muted)] mx-[2px]">→</span>BUILD
         </a>
         <nav className="hidden md:flex items-center gap-7">
-          <a href="#method" className="kicker hover:text-[var(--color-ink)] transition-colors">Mechanism</a>
-          <a href="#phases" className="kicker hover:text-[var(--color-ink)] transition-colors">Phases</a>
-          <a href="#manifesto" className="kicker hover:text-[var(--color-ink)] transition-colors">Manifesto</a>
+          <a href="#method" className="kicker hover:text-[var(--color-ink)] transition-colors">How it runs</a>
+          <a href="#phases" className="kicker hover:text-[var(--color-ink)] transition-colors">What you do</a>
+          <a href="#manifesto" className="kicker hover:text-[var(--color-ink)] transition-colors">About me</a>
           <a href="#ask" className="kicker hover:text-[var(--color-ink)] transition-colors">Apply</a>
         </nav>
         <div className="kicker flex items-center gap-2">

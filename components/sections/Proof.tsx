@@ -12,12 +12,12 @@ type Tile = {
 };
 
 const TILES: Tile[] = [
-  { num: "A01", title: "Personal tracker", outcome: "Ideated Friday · deployed Sunday", glyph: "grid", accent: true },
-  { num: "A02", title: "Ops dashboard", outcome: "Replaced a weekly spreadsheet", glyph: "wave" },
-  { num: "A03", title: "Generative planner", outcome: "From prompt to production in a weekend", glyph: "orbit" },
-  { num: "A04", title: "Internal tool", outcome: "Shipped to a 12-person team", glyph: "stack" },
-  { num: "A05", title: "Matching utility", outcome: "Built, tested, deployed, iterated", glyph: "beam", accent: true },
-  { num: "A06", title: "Content studio", outcome: "Idea to live URL, one sitting", glyph: "mesh" },
+  { num: "A01", title: "Workout tracker", outcome: "Built for personal use. Replaced three apps.", glyph: "grid", accent: true },
+  { num: "A02", title: "Household spend dashboard", outcome: "Reads a bank CSV. Flags overspending by category.", glyph: "wave" },
+  { num: "A03", title: "Meal planner", outcome: "Type what's in the fridge. Get three recipes back.", glyph: "orbit" },
+  { num: "A04", title: "Team check-in tool", outcome: "Shipped to a 10-person team. Still in use.", glyph: "stack" },
+  { num: "A05", title: "Travel day planner", outcome: "One afternoon to build. Used on a real trip.", glyph: "beam", accent: true },
+  { num: "A06", title: "Content queue", outcome: "From blank page to publishing pipeline, one weekend.", glyph: "mesh" },
 ];
 
 function Glyph({ type, accent }: { type: Tile["glyph"]; accent?: boolean }) {
@@ -128,18 +128,18 @@ export function Proof() {
     <section className="py-24 md:py-36 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[1120px]">
-          <SectionKicker number="06" label="EVIDENCE" className="mb-10 md:mb-14" />
+          <SectionKicker number="06" label="PAST PROJECTS" className="mb-10 md:mb-14" />
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 mb-14 md:mb-20">
             <div className="md:col-span-7">
               <h2 className="font-display text-[40px] md:text-[64px] leading-[1.0] tracking-[-0.02em] text-[var(--color-ink)]">
-                Built this way.<br />
-                <span className="italic text-[var(--color-accent)]">Already live.</span>
+                Apps built this way.<br />
+                <span className="italic text-[var(--color-accent)]">Already in use.</span>
               </h2>
             </div>
             <div className="md:col-span-5 md:pt-4">
               <p className="text-[17px] md:text-[19px] leading-[1.6] text-[var(--color-ink-muted)]">
-                A sample of apps that came out of the mechanism. Details held back on purpose — the interesting part isn&apos;t the screenshot. It&apos;s the weekend.
+                A few things I&apos;ve built using this method — mine and from past cohorts. Titles kept generic so you don&apos;t just copy someone else&apos;s idea. Yours won&apos;t look like these.
               </p>
             </div>
           </div>
@@ -161,7 +161,7 @@ export function Proof() {
                   <div className="flex items-center justify-between mb-3">
                     <p className="kicker text-[var(--color-ink-faint)]">{t.num}</p>
                     <p className="kicker text-[var(--color-ink-faint)] opacity-0 group-hover:opacity-100 transition-opacity">
-                      case held
+                      ask for details
                     </p>
                   </div>
                   <p className="font-display text-[22px] leading-[1.15] tracking-[-0.02em] text-[var(--color-ink)] mb-2">
@@ -176,7 +176,7 @@ export function Proof() {
           </div>
 
           <p className="kicker text-[var(--color-ink-faint)] mt-10 text-center leading-[1.5]">
-            Full walkthroughs shared inside the cohort · Not online
+            Happy to walk you through any of these on a call before you sign up.
           </p>
         </div>
       </div>

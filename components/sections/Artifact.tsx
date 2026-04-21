@@ -106,7 +106,7 @@ function StackFingerprint({ hints }: { hints: string[] }) {
         ))}
       </ul>
       <p className="kicker text-[var(--color-ink-faint)] mt-6 leading-[1.5]">
-        Specific picks revealed in-session.
+        Actual tools picked together in the workshop.
       </p>
     </div>
   );
@@ -194,15 +194,15 @@ export function Artifact() {
     <section className="py-24 md:py-36 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[1120px]">
-          <SectionKicker number="04" label="ARTIFACT · A PEEK" className="mb-10 md:mb-14" />
+          <SectionKicker number="04" label="TRY IT NOW" className="mb-10 md:mb-14" />
 
           <h2 className="font-display text-[40px] md:text-[64px] leading-[1.0] tracking-[-0.02em] text-[var(--color-ink)] mb-6 md:mb-8 max-w-[900px]">
-            Type an app idea.<br />
-            Glimpse what comes back.
+            Type an idea.<br />
+            See what the first hour looks like.
           </h2>
 
           <p className="text-[17px] md:text-[19px] leading-[1.55] text-[var(--color-ink-muted)] mb-10 md:mb-14 max-w-[640px]">
-            This is a preview of the opening move — a document, a direction, a deploy. The full method is what we do together.
+            A quick preview of how we&apos;d start Friday night: we&apos;d take your idea, get clear on what you&apos;re actually building, and pick a stack. In the workshop you fill in the details with me sitting next to you.
           </p>
 
           {/* Input */}
@@ -227,7 +227,7 @@ export function Artifact() {
                   disabled={!idea.trim()}
                   className="inline-flex items-center gap-2 px-5 py-2.5 text-[14px] font-medium bg-[var(--color-accent)] text-[var(--color-accent-ink)] disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[var(--color-accent)]/90 transition-opacity"
                 >
-                  Reveal the peek →
+                  Run it →
                 </button>
                 {peek && (
                   <button
@@ -283,7 +283,7 @@ export function Artifact() {
                 </div>
 
                 <p className="kicker mt-10 text-[var(--color-ink-faint)] max-w-[640px] leading-[1.5]">
-                  The contents stay blurred on purpose. The full document — and the choices behind every line of it — is what we build together in the cohort.
+                  Details are left blank on purpose. In the workshop you fill them in yourself, with me coaching you through each decision.
                 </p>
               </motion.div>
             )}

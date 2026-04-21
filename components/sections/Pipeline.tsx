@@ -11,11 +11,11 @@ type Node = {
 };
 
 const NODES: Node[] = [
-  { num: "I", name: "THE BRIEF", hint: "input" },
-  { num: "II", name: "THE ROOM", hint: "threshold" },
-  { num: "III", name: "THE MAP", hint: "direction" },
-  { num: "IV", name: "THE MAKING", hint: "form" },
-  { num: "V", name: "THE RELEASE", hint: "signal" },
+  { num: "01", name: "SCOPE", hint: "Fri evening" },
+  { num: "02", name: "SET UP", hint: "Sat morning" },
+  { num: "03", name: "PLAN", hint: "Sat midday" },
+  { num: "04", name: "BUILD", hint: "Sat / Sun" },
+  { num: "05", name: "SHIP", hint: "Sun evening" },
 ];
 
 export function Pipeline() {
@@ -38,18 +38,18 @@ export function Pipeline() {
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[1120px]">
-          <SectionKicker number="03" label="THE MECHANISM" className="mb-10 md:mb-14" />
+          <SectionKicker number="03" label="HOW THE WEEKEND RUNS" className="mb-10 md:mb-14" />
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 mb-16 md:mb-24">
             <div className="md:col-span-7">
               <h2 className="font-display text-[40px] md:text-[72px] leading-[1.0] tracking-[-0.02em] text-[var(--color-ink)]">
-                Five moves,{" "}
-                <span className="italic text-[var(--color-accent)]">one motion.</span>
+                Five phases,{" "}
+                <span className="italic text-[var(--color-accent)]">two days.</span>
               </h2>
             </div>
             <div className="md:col-span-5 md:pt-4">
               <p className="text-[17px] md:text-[19px] leading-[1.6] text-[var(--color-ink-muted)]">
-                A clear shape underneath the work. Repeatable enough to rely on, loose enough for the creative turns that make the result yours.
+                Friday evening we scope your idea. Saturday we plan and build. Sunday we ship. You&apos;ll know exactly what we&apos;re doing at every point.
               </p>
             </div>
           </div>
@@ -91,7 +91,7 @@ export function Pipeline() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="kicker text-[var(--color-ink-faint)] mt-14 text-center"
             >
-              The names are placeholders. The mechanism is not.
+              Same five phases every cohort. Your idea is what makes it different.
             </motion.p>
           </div>
 
@@ -123,7 +123,7 @@ export function Pipeline() {
             </div>
 
             <p className="kicker text-[var(--color-ink-faint)] mt-12 text-center">
-              The names are placeholders. The mechanism is not.
+              Same five phases every cohort. Your idea is what makes it different.
             </p>
           </div>
         </div>

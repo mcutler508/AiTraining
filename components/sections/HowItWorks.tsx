@@ -30,34 +30,34 @@ type Step = {
 
 const STEPS: Step[] = [
   {
-    num: "I",
-    name: "THE BRIEF",
-    heading: "The idea becomes legible.",
-    body: "Loose in your head. Sharp on the page. The first object you can hand to anything — a person, a tool, a machine — and have it understood the same way twice.",
+    num: "01",
+    name: "SCOPE",
+    heading: "Get clear on what you're actually making.",
+    body: "Before any code, we turn the fuzzy thing in your head into a one-page brief. Who it's for. What it does. What it deliberately doesn't do. This page guides every decision from here on.",
   },
   {
-    num: "II",
-    name: "THE ROOM",
-    heading: "You cross a threshold.",
-    body: "The environment changes. The brief is already here. The assistants already know why you arrived. The work now has a place to happen, with everything within reach.",
+    num: "02",
+    name: "SET UP",
+    heading: "Get your tools talking to each other.",
+    body: "You'll set up a clean workspace where your notes, your AI helpers, and your code all live in one place. I walk you through it step by step — no guessing, no broken installs.",
   },
   {
-    num: "III",
-    name: "THE MAP",
-    heading: "Direction enters.",
-    body: "Shape proposes itself. You push back, pick the detours, commit to a path. This is where taste lives — and where the run stops looking like anyone else's.",
+    num: "03",
+    name: "PLAN",
+    heading: "Decide what ships and what waits.",
+    body: "We map the shortest path from brief to live URL. You pick the stack, the scope, and the first milestone. The AI proposes, you decide — and I help you tell the difference between a good suggestion and a bad one.",
   },
   {
-    num: "IV",
-    name: "THE MAKING",
-    heading: "The thing takes form.",
-    body: "Under your hands, one piece at a time. You're directing, not typing from scratch. Problems appear and get solved in minutes. Momentum is the feeling.",
+    num: "04",
+    name: "BUILD",
+    heading: "Work through it one piece at a time.",
+    body: "You build, break things, and fix them. The AI drafts the code, you review every change, I'm there when something doesn't work. You stay in the driver's seat the whole weekend.",
   },
   {
-    num: "V",
-    name: "THE RELEASE",
-    heading: "It leaves your machine.",
-    body: "A URL anyone can open. A real thing, built by you, on the internet. The loop closes — and the next one begins, cleaner, faster, sharper than the last.",
+    num: "05",
+    name: "SHIP",
+    heading: "Push it live.",
+    body: "Sunday we put your code in a repo you own and deploy it to the web. You leave with a working URL, a tidy codebase, and a repeatable playbook for the next idea.",
   },
 ];
 
@@ -75,9 +75,9 @@ export function HowItWorks() {
       {/* Mobile: vertical stack */}
       <div className="md:hidden py-20">
         <div className="max-w-[1280px] mx-auto px-6">
-          <SectionKicker number="05" label="THE FIVE MOVES" className="mb-12" />
+          <SectionKicker number="05" label="WHAT YOU ACTUALLY DO" className="mb-12" />
           <h2 className="font-display text-[40px] leading-[1.0] tracking-[-0.02em] mb-12">
-            Five phases. One flow.
+            What you actually do.
           </h2>
           <div className="space-y-10">
             {STEPS.map((s) => (
@@ -101,9 +101,9 @@ export function HowItWorks() {
       <div ref={ref} className="hidden md:block relative h-[500vh]">
         <div className="sticky top-0 h-screen overflow-hidden">
           <div className="max-w-[1280px] mx-auto px-10 pt-28">
-            <SectionKicker number="05" label="THE FIVE MOVES" className="mb-10" />
+            <SectionKicker number="05" label="WHAT YOU ACTUALLY DO" className="mb-10" />
             <h2 className="font-display text-[64px] leading-[1.0] tracking-[-0.02em]">
-              Five phases. One flow.
+              What you actually do.
             </h2>
           </div>
 

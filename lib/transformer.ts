@@ -44,32 +44,32 @@ const KIND_TABLE: { keywords: string[]; kind: string; tagline: string; stack: st
   {
     keywords: ["track", "log", "record", "journal", "history"],
     kind: "A personal tracker",
-    tagline: "Captures inputs over time, remembers what matters, nudges the next move.",
+    tagline: "Keeps a running record of something you care about and suggests the next step.",
     stack: ["Typed frontend", "Persistent store", "Auth per user"],
   },
   {
     keywords: ["dashboard", "chart", "report", "spend", "budget", "metric"],
     kind: "A live dashboard",
-    tagline: "Ingests raw data, distills it into shapes the eye can read.",
+    tagline: "Reads raw numbers and turns them into charts you and your team can follow.",
     stack: ["Typed frontend", "Data import", "Chart layer"],
   },
   {
     keywords: ["plan", "schedule", "suggest", "recipe", "recommend", "generate"],
     kind: "A generative planner",
-    tagline: "Turns loose inputs into a structured, streamed plan you can act on.",
+    tagline: "Takes a rough input and hands back a structured plan you can actually use.",
     stack: ["Typed frontend", "Model layer", "Streaming response"],
   },
   {
     keywords: ["match", "find", "search", "discover"],
     kind: "A matching tool",
-    tagline: "Takes intent on one side and surfaces the right thing on the other.",
+    tagline: "Lets people describe what they need and returns the best options from your data.",
     stack: ["Typed frontend", "Indexed store", "Relevance layer"],
   },
 ];
 
 const DEFAULT_KIND = {
   kind: "A focused tool",
-  tagline: "One page, one job, done clean.",
+  tagline: "One page. One job. Done well.",
   stack: ["Typed frontend", "Edge function", "Hosted deploy"],
 };
 

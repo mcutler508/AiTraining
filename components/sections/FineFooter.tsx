@@ -1,13 +1,13 @@
 const INDEX = [
-  { num: "01", label: "Statement", href: "#top" },
-  { num: "02", label: "Tension", href: "#top" },
-  { num: "03", label: "Mechanism", href: "#method" },
-  { num: "04", label: "Artifact", href: "#top" },
-  { num: "05", label: "The five moves", href: "#phases" },
-  { num: "06", label: "Evidence", href: "#top" },
-  { num: "07", label: "Position", href: "#top" },
-  { num: "08", label: "Manifesto", href: "#manifesto" },
-  { num: "09", label: "Early access", href: "#ask" },
+  { num: "01", label: "The workshop", href: "#top" },
+  { num: "02", label: "Why this exists", href: "#top" },
+  { num: "03", label: "How it runs", href: "#method" },
+  { num: "04", label: "Try it now", href: "#top" },
+  { num: "05", label: "What you do", href: "#phases" },
+  { num: "06", label: "Past projects", href: "#top" },
+  { num: "07", label: "Who it's for", href: "#top" },
+  { num: "08", label: "About me", href: "#manifesto" },
+  { num: "09", label: "Apply", href: "#ask" },
 ];
 
 export function FineFooter() {
@@ -20,7 +20,7 @@ export function FineFooter() {
               FLOW<span className="text-[var(--color-ink-muted)] mx-[2px]">→</span>BUILD
             </p>
             <p className="mt-3 text-[15px] leading-[1.5] text-[var(--color-ink-muted)] max-w-[280px]">
-              A training program for turning an idea into a live app in a single creative flow. Five moves, one motion.
+              A weekend workshop. You bring an idea. You leave with a working app on the internet.
             </p>
           </div>
 
