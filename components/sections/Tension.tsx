@@ -3,10 +3,10 @@ import { Hairline } from "@/components/ui/Hairline";
 
 export function Tension() {
   return (
-    <section className="py-24 md:py-36 border-t border-[var(--color-hairline)]">
+    <section className="py-14 md:py-20 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[1120px]">
-          <SectionKicker number="02" label="WHY THIS EXISTS" className="mb-14 md:mb-20" />
+          <SectionKicker number="02" label="WHY THIS EXISTS" className="mb-10 md:mb-12" />
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14">
             <div className="md:col-span-5">
@@ -24,13 +24,13 @@ export function Tension() {
               <p className="kicker mb-4 text-[var(--color-ink-faint)]">What you get here</p>
               <p className="font-display text-[26px] md:text-[34px] leading-[1.2] tracking-[-0.02em] text-[var(--color-ink)]">
                 One idea you&apos;ve been sitting on, turned into a working app you can actually show people.{" "}
-                <span className="italic text-[var(--color-accent)]">By Sunday night.</span>{" "}
+                <span className="italic text-[var(--color-accent)]">Plus the skill to build the next.</span>{" "}
                 With the code in a repo you own.
               </p>
             </div>
           </div>
 
-          <div className="mt-20 md:mt-28">
+          <div className="mt-12 md:mt-16">
             <Hairline />
           </div>
         </div>

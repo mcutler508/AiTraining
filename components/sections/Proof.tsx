@@ -17,7 +17,7 @@ const TILES: Tile[] = [
   { num: "A03", title: "Meal planner", outcome: "Type what's in the fridge. Get three recipes back.", glyph: "orbit" },
   { num: "A04", title: "Team check-in tool", outcome: "Shipped to a 10-person team. Still in use.", glyph: "stack" },
   { num: "A05", title: "Travel day planner", outcome: "One afternoon to build. Used on a real trip.", glyph: "beam", accent: true },
-  { num: "A06", title: "Content queue", outcome: "From blank page to publishing pipeline, one weekend.", glyph: "mesh" },
+  { num: "A06", title: "Content queue", outcome: "From blank page to a publishing pipeline, start to finish.", glyph: "mesh" },
 ];
 
 function Glyph({ type, accent }: { type: Tile["glyph"]; accent?: boolean }) {
@@ -125,12 +125,12 @@ function Glyph({ type, accent }: { type: Tile["glyph"]; accent?: boolean }) {
 
 export function Proof() {
   return (
-    <section className="py-24 md:py-36 border-t border-[var(--color-hairline)]">
+    <section className="py-14 md:py-20 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[1120px]">
-          <SectionKicker number="06" label="PAST PROJECTS" className="mb-10 md:mb-14" />
+          <SectionKicker number="05" label="PAST PROJECTS" className="mb-10 md:mb-12" />
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 mb-14 md:mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 mb-10 md:mb-14">
             <div className="md:col-span-7">
               <h2 className="font-display text-[40px] md:text-[64px] leading-[1.0] tracking-[-0.02em] text-[var(--color-ink)]">
                 Apps built this way.<br />
@@ -139,7 +139,7 @@ export function Proof() {
             </div>
             <div className="md:col-span-5 md:pt-4">
               <p className="text-[17px] md:text-[19px] leading-[1.6] text-[var(--color-ink-muted)]">
-                A few things I&apos;ve built using this method — mine and from past cohorts. Titles kept generic so you don&apos;t just copy someone else&apos;s idea. Yours won&apos;t look like these.
+                A few things I&apos;ve built using this method — mine and from past sessions. Titles kept generic so you don&apos;t just copy someone else&apos;s idea. Yours won&apos;t look like these.
               </p>
             </div>
           </div>
@@ -175,7 +175,7 @@ export function Proof() {
             ))}
           </div>
 
-          <p className="kicker text-[var(--color-ink-faint)] mt-10 text-center leading-[1.5]">
+          <p className="kicker text-[var(--color-ink-faint)] mt-8 text-center leading-[1.5]">
             Happy to walk you through any of these on a call before you sign up.
           </p>
         </div>

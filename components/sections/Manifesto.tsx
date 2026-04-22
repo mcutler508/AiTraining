@@ -2,10 +2,10 @@ import { SectionKicker } from "@/components/ui/SectionKicker";
 
 export function Manifesto() {
   return (
-    <section id="manifesto" className="py-24 md:py-36 border-t border-[var(--color-hairline)]">
+    <section id="manifesto" className="py-14 md:py-20 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[800px]">
-          <SectionKicker number="08" label="WHY I MADE THIS" className="mb-14 md:mb-20" />
+          <SectionKicker number="07" label="WHY I MADE THIS" className="mb-10 md:mb-12" />
 
           <div className="font-display text-[22px] md:text-[28px] leading-[1.4] tracking-[-0.01em] text-[var(--color-ink)] space-y-6">
             <p>
@@ -20,13 +20,13 @@ export function Manifesto() {
               I spent the last year figuring out what that path looks like &mdash; what order to do things in, when to trust the AI, when to push back, when to stop fiddling and ship. I used it to build my own tools, and the apps in the section above.
             </p>
             <p>
-              This workshop is the version of that path you can walk in one weekend with me sitting next to you. You bring an idea you&apos;ve been meaning to build. By Sunday night, it has a URL.
+              These sessions are the version of that path where I&apos;m sitting next to you. You bring an idea you&apos;ve been meaning to build. We ship it together — and you leave knowing how to ship the next one without me.
             </p>
           </div>
 
-          <div className="mt-14 md:mt-20 pt-8 border-t border-[var(--color-hairline)]">
+          <div className="mt-10 md:mt-14 pt-6 border-t border-[var(--color-hairline)]">
             <p className="kicker text-[var(--color-ink-muted)]">
-              — [Your Name], workshop lead
+              — [Your Name]
             </p>
           </div>
         </div>

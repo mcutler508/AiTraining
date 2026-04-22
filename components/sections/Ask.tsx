@@ -16,18 +16,18 @@ export function Ask() {
   };
 
   return (
-    <section id="ask" className="py-28 md:py-40 border-t border-[var(--color-hairline)]">
+    <section id="ask" className="py-16 md:py-24 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[820px]">
-          <SectionKicker number="09" label="APPLY" className="mb-14 md:mb-20" />
+          <SectionKicker number="08" label="APPLY" className="mb-10 md:mb-12" />
 
-          <h2 className="font-display text-[48px] md:text-[88px] leading-[0.98] tracking-[-0.03em] text-[var(--color-ink)] mb-8 md:mb-10">
-            Join <br />
-            Cohort <span className="italic text-[var(--color-accent)]">01</span>.
+          <h2 className="font-display text-[48px] md:text-[88px] leading-[0.98] tracking-[-0.03em] text-[var(--color-ink)] mb-6 md:mb-8">
+            Save <br />
+            a <span className="italic text-[var(--color-accent)]">seat</span>.
           </h2>
 
-          <p className="text-[19px] md:text-[22px] leading-[1.45] text-[var(--color-ink-muted)] mb-12 max-w-[640px]">
-            Small group. One weekend, Friday evening through Sunday night. You bring an idea you&apos;ve been meaning to build; you leave with it live on the internet and a repo you own. First cohort is priced below what it&apos;ll be later.
+          <p className="text-[19px] md:text-[22px] leading-[1.45] text-[var(--color-ink-muted)] mb-8 md:mb-10 max-w-[640px]">
+            Sessions with me, shaped around your idea. You bring something you&apos;ve been meaning to build; we ship it together, and you leave knowing how to ship the next one on your own. Early seats are priced below what they&apos;ll be later.
           </p>
 
           <AnimatePresence mode="wait">

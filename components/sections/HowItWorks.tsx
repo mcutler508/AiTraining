@@ -51,13 +51,13 @@ const STEPS: Step[] = [
     num: "04",
     name: "BUILD",
     heading: "Work through it one piece at a time.",
-    body: "You build, break things, and fix them. The AI drafts the code, you review every change, I'm there when something doesn't work. You stay in the driver's seat the whole weekend.",
+    body: "You build, break things, and fix them. The AI drafts the code, you review every change, I'm there when something doesn't work. You stay in the driver's seat the whole way through.",
   },
   {
     num: "05",
     name: "SHIP",
     heading: "Push it live.",
-    body: "Sunday we put your code in a repo you own and deploy it to the web. You leave with a working URL, a tidy codebase, and a repeatable playbook for the next idea.",
+    body: "When it's ready, we put your code in a repo you own and deploy it to the web. You leave with a working URL, a tidy codebase, and a playbook you can run yourself the next time.",
   },
 ];
 
@@ -73,9 +73,9 @@ export function HowItWorks() {
   return (
     <section id="phases" className="border-t border-[var(--color-hairline)]">
       {/* Mobile: vertical stack */}
-      <div className="md:hidden py-20">
+      <div className="md:hidden py-14">
         <div className="max-w-[1280px] mx-auto px-6">
-          <SectionKicker number="05" label="WHAT YOU ACTUALLY DO" className="mb-12" />
+          <SectionKicker number="04" label="WHAT YOU ACTUALLY DO" className="mb-10" />
           <h2 className="font-display text-[40px] leading-[1.0] tracking-[-0.02em] mb-12">
             What you actually do.
           </h2>
@@ -99,45 +99,51 @@ export function HowItWorks() {
 
       {/* Desktop: pinned horizontal */}
       <div ref={ref} className="hidden md:block relative h-[500vh]">
-        <div className="sticky top-0 h-screen overflow-hidden">
-          <div className="max-w-[1280px] mx-auto px-10 pt-28">
-            <SectionKicker number="05" label="WHAT YOU ACTUALLY DO" className="mb-10" />
-            <h2 className="font-display text-[64px] leading-[1.0] tracking-[-0.02em]">
-              What you actually do.
-            </h2>
+        <div className="sticky top-0 h-screen overflow-hidden flex flex-col">
+          {/* Title block */}
+          <div className="flex-shrink-0 w-full pt-16 lg:pt-20 pb-2">
+            <div className="max-w-[1280px] mx-auto px-10">
+              <SectionKicker number="04" label="WHAT YOU ACTUALLY DO" className="mb-5" />
+              <h2 className="font-display text-[48px] lg:text-[56px] leading-[1.0] tracking-[-0.02em]">
+                What you actually do.
+              </h2>
+            </div>
           </div>
 
-          <motion.div
-            style={{ x }}
-            className="absolute top-[50%] left-[10vw] flex gap-10"
-          >
-            {STEPS.map((s, i) => (
-              <article
-                key={s.num}
-                className="w-[78vw] max-w-[900px] flex-shrink-0 border border-[var(--color-hairline)] p-10 lg:p-14 bg-[var(--color-canvas)]"
-              >
-                <div className="kicker flex items-center gap-4 mb-6">
-                  <span className="font-display text-[64px] leading-none text-[var(--color-ink)] tracking-[-0.03em]" style={{ letterSpacing: "-0.03em" }}>
-                    {s.num}
-                  </span>
-                  <span className="text-[var(--color-ink-faint)]">·</span>
-                  <span>{s.name}</span>
-                  <span className="ml-auto text-[var(--color-ink-faint)]">
-                    {i + 1} / {STEPS.length}
-                  </span>
-                </div>
-                <h3 className="font-display text-[44px] lg:text-[56px] leading-[1.0] tracking-[-0.02em] mb-6 max-w-[700px]">
-                  {s.heading}
-                </h3>
-                <p className="text-[19px] lg:text-[21px] leading-[1.5] text-[var(--color-ink-muted)] max-w-[620px]">
-                  {s.body}
-                </p>
-              </article>
-            ))}
-          </motion.div>
+          {/* Horizontal track — fills remaining vertical space, cards centered inside */}
+          <div className="flex-1 min-h-0 relative">
+            <motion.div
+              style={{ x }}
+              className="absolute top-1/2 -translate-y-1/2 left-[10vw] flex gap-10"
+            >
+              {STEPS.map((s, i) => (
+                <article
+                  key={s.num}
+                  className="w-[78vw] max-w-[860px] flex-shrink-0 border border-[var(--color-hairline)] p-8 lg:p-12 bg-[var(--color-canvas)]"
+                >
+                  <div className="kicker flex items-center gap-4 mb-5">
+                    <span className="font-display text-[44px] lg:text-[52px] leading-none text-[var(--color-ink)] tracking-[-0.03em]">
+                      {s.num}
+                    </span>
+                    <span className="text-[var(--color-ink-faint)]">·</span>
+                    <span>{s.name}</span>
+                    <span className="ml-auto text-[var(--color-ink-faint)]">
+                      {i + 1} / {STEPS.length}
+                    </span>
+                  </div>
+                  <h3 className="font-display text-[32px] lg:text-[44px] leading-[1.05] tracking-[-0.02em] mb-4 max-w-[700px]">
+                    {s.heading}
+                  </h3>
+                  <p className="text-[16px] lg:text-[18px] leading-[1.5] text-[var(--color-ink-muted)] max-w-[620px]">
+                    {s.body}
+                  </p>
+                </article>
+              ))}
+            </motion.div>
+          </div>
 
-          {/* Bottom rail / indicator */}
-          <div className="absolute bottom-10 left-10 right-10 flex items-center justify-between">
+          {/* Bottom rail */}
+          <div className="flex-shrink-0 w-full px-10 pb-8 pt-4 flex items-center justify-between">
             <p className="kicker text-[var(--color-ink-faint)]">Scroll ↓ to advance</p>
             <div className="flex gap-2">
               {STEPS.map((_, i) => (

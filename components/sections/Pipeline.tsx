@@ -11,11 +11,11 @@ type Node = {
 };
 
 const NODES: Node[] = [
-  { num: "01", name: "SCOPE", hint: "Fri evening" },
-  { num: "02", name: "SET UP", hint: "Sat morning" },
-  { num: "03", name: "PLAN", hint: "Sat midday" },
-  { num: "04", name: "BUILD", hint: "Sat / Sun" },
-  { num: "05", name: "SHIP", hint: "Sun evening" },
+  { num: "01", name: "SCOPE", hint: "the idea" },
+  { num: "02", name: "SET UP", hint: "the tools" },
+  { num: "03", name: "PLAN", hint: "the path" },
+  { num: "04", name: "BUILD", hint: "the work" },
+  { num: "05", name: "SHIP", hint: "the release" },
 ];
 
 export function Pipeline() {
@@ -34,29 +34,29 @@ export function Pipeline() {
     <section
       id="method"
       ref={ref}
-      className="py-28 md:py-40 border-t border-[var(--color-hairline)]"
+      className="py-16 md:py-24 border-t border-[var(--color-hairline)]"
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[1120px]">
-          <SectionKicker number="03" label="HOW THE WEEKEND RUNS" className="mb-10 md:mb-14" />
+          <SectionKicker number="03" label="HOW THE WORK RUNS" className="mb-10 md:mb-12" />
 
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 mb-16 md:mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 mb-10 md:mb-14">
             <div className="md:col-span-7">
               <h2 className="font-display text-[40px] md:text-[72px] leading-[1.0] tracking-[-0.02em] text-[var(--color-ink)]">
-                Five phases,{" "}
-                <span className="italic text-[var(--color-accent)]">two days.</span>
+                Five phases.{" "}
+                <span className="italic text-[var(--color-accent)]">Repeatable.</span>
               </h2>
             </div>
             <div className="md:col-span-5 md:pt-4">
               <p className="text-[17px] md:text-[19px] leading-[1.6] text-[var(--color-ink-muted)]">
-                Friday evening we scope your idea. Saturday we plan and build. Sunday we ship. You&apos;ll know exactly what we&apos;re doing at every point.
+                First we scope the idea. Then we set up the workspace. Then we plan, build, and ship — in that order. Once you&apos;ve been through it, you can run it yourself.
               </p>
             </div>
           </div>
 
           {/* Desktop: horizontal pipeline */}
           <div ref={inViewRef} className="hidden md:block">
-            <div className="relative py-10">
+            <div className="relative py-6">
               {/* background hairline */}
               <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-px bg-[var(--color-hairline)]" aria-hidden />
               {/* animated fill */}
@@ -89,9 +89,9 @@ export function Pipeline() {
               initial={{ opacity: 0 }}
               animate={{ opacity: inView ? 1 : 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="kicker text-[var(--color-ink-faint)] mt-14 text-center"
+              className="kicker text-[var(--color-ink-faint)] mt-10 text-center"
             >
-              Same five phases every cohort. Your idea is what makes it different.
+              Same five phases every time. Your idea is what makes it different.
             </motion.p>
           </div>
 
@@ -122,8 +122,8 @@ export function Pipeline() {
               </div>
             </div>
 
-            <p className="kicker text-[var(--color-ink-faint)] mt-12 text-center">
-              Same five phases every cohort. Your idea is what makes it different.
+            <p className="kicker text-[var(--color-ink-faint)] mt-8 text-center">
+              Same five phases every time. Your idea is what makes it different.
             </p>
           </div>
         </div>

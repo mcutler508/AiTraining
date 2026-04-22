@@ -2,7 +2,6 @@ import { Marquee } from "@/components/sections/Marquee";
 import { Statement } from "@/components/sections/Statement";
 import { Tension } from "@/components/sections/Tension";
 import { Pipeline } from "@/components/sections/Pipeline";
-import { Artifact } from "@/components/sections/Artifact";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Proof } from "@/components/sections/Proof";
 import { Position } from "@/components/sections/Position";
@@ -18,7 +17,6 @@ export default function Home() {
         <Statement />
         <Tension />
         <Pipeline />
-        <Artifact />
         <HowItWorks />
         <Proof />
         <Position />

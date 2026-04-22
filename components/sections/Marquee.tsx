@@ -1,5 +1,3 @@
-import { LiveDot } from "@/components/ui/LiveDot";
-
 export function Marquee() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-12 border-b border-[var(--color-hairline)] bg-[var(--color-canvas)]/90 backdrop-blur-[2px]">
@@ -13,12 +11,9 @@ export function Marquee() {
           <a href="#manifesto" className="kicker hover:text-[var(--color-ink)] transition-colors">About me</a>
           <a href="#ask" className="kicker hover:text-[var(--color-ink)] transition-colors">Apply</a>
         </nav>
-        <div className="kicker flex items-center gap-2">
-          <LiveDot />
-          <span className="hidden sm:inline">Cohort 01</span>
-          <span className="hidden sm:inline text-[var(--color-ink-faint)]">¦</span>
-          <span className="text-[var(--color-ink)]">Enrolling now</span>
-        </div>
+        <a href="#ask" className="kicker text-[var(--color-ink)] hover:text-[var(--color-accent)] transition-colors">
+          Get in touch →
+        </a>
       </div>
     </header>
   );

@@ -8,9 +8,9 @@ import { motion } from "framer-motion";
 
 export function Statement() {
   return (
-    <section id="top" className="pt-32 md:pt-40 pb-24 md:pb-36">
+    <section id="top" className="pt-24 md:pt-28 pb-16 md:pb-20">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
-        <SectionKicker number="01" label="A WEEKEND WORKSHOP · COHORT 01" className="mb-14 md:mb-20" />
+        <SectionKicker number="01" label="TRAINING ¦ BUILD REAL APPS" className="mb-10 md:mb-12" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <div className="lg:col-span-7">
@@ -30,7 +30,7 @@ export function Statement() {
                   className="italic text-[var(--color-accent)]"
                   style={{ display: "inline-block" }}
                 >
-                  In a weekend.
+                  And the next one.
                 </motion.span>
               </span>
             </h1>
@@ -39,16 +39,16 @@ export function Statement() {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.2 }}
-              className="mt-10 md:mt-14 max-w-[600px] text-[19px] md:text-[22px] leading-[1.45] text-[var(--color-ink-muted)]"
+              className="mt-8 md:mt-10 max-w-[600px] text-[19px] md:text-[22px] leading-[1.45] text-[var(--color-ink-muted)]"
             >
-              A two-day workshop for non-developers. You bring one real idea. I walk you through planning, building, and deploying it with AI as a helper. By Sunday night it has a URL you can share.
+              Sessions for non-developers with an idea worth building. We work through it together — plan it, build it, deploy it. The real payoff is that you leave knowing how to do the next one on your own.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 1.4 }}
-              className="mt-10 md:mt-14 flex flex-wrap items-center gap-4"
+              className="mt-8 md:mt-10 flex flex-wrap items-center gap-4"
             >
               <MagneticButton href="#ask" variant="primary">
                 Save a seat
