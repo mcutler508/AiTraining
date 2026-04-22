@@ -39,13 +39,13 @@ const STEPS: Step[] = [
     num: "02",
     name: "SET UP",
     heading: "Get your tools talking to each other.",
-    body: "You'll set up a clean workspace where your notes, your AI helpers, and your code all live in one place. I walk you through it step by step — no guessing, no broken installs.",
+    body: "You'll set up a clean workspace where your notes, your AI helpers, and your code all live in one place. I walk you through it step by step. No guessing, no broken installs.",
   },
   {
     num: "03",
     name: "PLAN",
     heading: "Decide what ships and what waits.",
-    body: "We map the shortest path from brief to live URL. You pick the stack, the scope, and the first milestone. The AI proposes, you decide — and I help you tell the difference between a good suggestion and a bad one.",
+    body: "We map the shortest path from brief to live URL. You pick the stack, the scope, and the first milestone. The AI proposes, you decide. I help you tell the difference between a good suggestion and a bad one.",
   },
   {
     num: "04",

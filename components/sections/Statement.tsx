@@ -37,7 +37,7 @@ export function Statement() {
           transition={{ duration: 0.6, delay: 1.15 }}
           className="mt-7 md:mt-9 max-w-[620px] text-[18px] md:text-[20px] leading-[1.5] text-[var(--color-ink-muted)]"
         >
-          Sessions for non-developers with an idea worth building. We work through it together &mdash; plan it, build it, deploy it. The real payoff is that you leave knowing how to do the next one on your own.
+          Sessions for non-developers with an idea worth building. We work through it together. Plan it, build it, deploy it. The real payoff is that you leave knowing how to do the next one on your own.
         </motion.p>
 
         <motion.div

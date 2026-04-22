@@ -27,7 +27,7 @@ export function Ask() {
           </h2>
 
           <p className="text-[19px] md:text-[22px] leading-[1.45] text-[var(--color-ink-muted)] mb-8 md:mb-10 max-w-[640px]">
-            Sessions with me, shaped around your idea. You bring something you&apos;ve been meaning to build &mdash; and the willingness to push through a real learning curve. We ship it together, and you leave knowing how to ship the next one on your own. Early seats are priced below what they&apos;ll be later.
+            Sessions with me, shaped around your idea. You bring something you&apos;ve been meaning to build, plus the willingness to push through a real learning curve. We ship it together, and you leave knowing how to ship the next one on your own. Early seats are priced below what they&apos;ll be later.
           </p>
 
           <AnimatePresence mode="wait">

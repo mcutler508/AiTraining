@@ -35,9 +35,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FLOW→BUILD — If you know Excel, you can build with AI.",
+  title: "FLOW→BUILD · Build the app you've been meaning to build.",
   description:
-    "A 5-phase method for turning one-off prompts into repeatable workflows — and repeatable workflows into shipped tools. For Excel-proficient knowledge workers.",
+    "Training for non-developers. You bring an idea. You leave with a working app, and the skill to build the next.",
 };
 
 export default function RootLayout({

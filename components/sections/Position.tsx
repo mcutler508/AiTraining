@@ -76,7 +76,7 @@ export function Position() {
               className="font-display text-[22px] md:text-[28px] leading-[1.4] tracking-[-0.01em]"
               style={{ color: "var(--color-accent-ink)" }}
             >
-              There&apos;s stuff to learn. New tools, some new words, a few ideas about how the internet actually works under the hood. That part&apos;s real &mdash; <span className="italic">there&apos;s no skipping it</span>. What&apos;s different here is you&apos;re not figuring it out alone at midnight. We do it together, on your project, in an order that makes sense.
+              There&apos;s stuff to learn. New tools, some new words, a few ideas about how the internet actually works under the hood. That part&apos;s real. <span className="italic">There&apos;s no skipping it.</span> What&apos;s different here is you&apos;re not figuring it out alone at midnight. We do it together, on your project, in an order that makes sense.
             </p>
             <p
               className="mt-6 md:mt-8 text-[15px] md:text-[17px] leading-[1.55]"

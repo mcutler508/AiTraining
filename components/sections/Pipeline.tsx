@@ -49,7 +49,7 @@ export function Pipeline() {
             </div>
             <div className="md:col-span-5 md:pt-4">
               <p className="text-[17px] md:text-[19px] leading-[1.6] text-[var(--color-ink-muted)]">
-                First we scope the idea. Then we set up the workspace. Then we plan, build, and ship — in that order. Once you&apos;ve been through it, you can run it yourself.
+                First we scope the idea. Then we set up the workspace. Then we plan, build, and ship, in that order. Once you&apos;ve been through it, you can run it yourself.
               </p>
             </div>
           </div>

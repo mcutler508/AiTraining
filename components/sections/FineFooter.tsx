@@ -18,7 +18,7 @@ export function FineFooter() {
               FLOW<span className="text-[var(--color-ink-muted)] mx-[2px]">→</span>BUILD
             </p>
             <p className="mt-3 text-[15px] leading-[1.5] text-[var(--color-ink-muted)] max-w-[280px]">
-              Sessions with me. You bring an idea. You leave with a working app — and the skill to build the next.
+              Sessions with me. You bring an idea. You leave with a working app. And the skill to build the next.
             </p>
           </div>
 
