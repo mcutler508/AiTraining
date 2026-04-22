@@ -5,16 +5,19 @@ export function Manifesto() {
     <section id="manifesto" className="py-14 md:py-20 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[800px]">
-          <SectionKicker number="07" label="WHY I MADE THIS" className="mb-10 md:mb-12" />
+          <SectionKicker number="06" label="WHY I MADE THIS" className="mb-10 md:mb-12" />
 
           <div className="font-display text-[22px] md:text-[28px] leading-[1.4] tracking-[-0.01em] text-[var(--color-ink)] space-y-6">
             <p>
               I&apos;ve watched a lot of smart people spend a year &ldquo;learning AI&rdquo; and come out the other side with nothing to show for it. A folder of saved prompts. A half-finished side project. A quiet sense they&apos;re falling behind.
             </p>
             <p>
+              It&apos;s not that they&apos;re lazy. It&apos;s that the learning curve is real &mdash; a handful of new concepts, in the right order &mdash; and climbing it alone from scratch is slow and demoralizing. Most people give up on the third broken install.
+            </p>
+            <p>
               The missing piece isn&apos;t a better prompt library. It&apos;s{" "}
               <span className="italic text-[var(--color-accent)]">a clear path</span>{" "}
-              from an idea to something that actually runs on the internet.
+              from an idea to something that actually runs on the internet &mdash; with someone next to you when you hit the parts that make you want to quit.
             </p>
             <p>
               I spent the last year figuring out what that path looks like &mdash; what order to do things in, when to trust the AI, when to push back, when to stop fiddling and ship. I used it to build my own tools, and the apps in the section above.

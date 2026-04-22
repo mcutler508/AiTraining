@@ -3,7 +3,7 @@ import { Hairline } from "@/components/ui/Hairline";
 
 export function Tension() {
   return (
-    <section className="py-14 md:py-20 border-t border-[var(--color-hairline)]">
+    <section id="tension" className="py-14 md:py-20 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[1120px]">
           <SectionKicker number="02" label="WHY THIS EXISTS" className="mb-10 md:mb-12" />

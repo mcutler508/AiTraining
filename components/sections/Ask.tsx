@@ -19,7 +19,7 @@ export function Ask() {
     <section id="ask" className="py-16 md:py-24 border-t border-[var(--color-hairline)]">
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="max-w-[820px]">
-          <SectionKicker number="08" label="APPLY" className="mb-10 md:mb-12" />
+          <SectionKicker number="07" label="APPLY" className="mb-10 md:mb-12" />
 
           <h2 className="font-display text-[48px] md:text-[88px] leading-[0.98] tracking-[-0.03em] text-[var(--color-ink)] mb-6 md:mb-8">
             Save <br />
@@ -27,7 +27,7 @@ export function Ask() {
           </h2>
 
           <p className="text-[19px] md:text-[22px] leading-[1.45] text-[var(--color-ink-muted)] mb-8 md:mb-10 max-w-[640px]">
-            Sessions with me, shaped around your idea. You bring something you&apos;ve been meaning to build; we ship it together, and you leave knowing how to ship the next one on your own. Early seats are priced below what they&apos;ll be later.
+            Sessions with me, shaped around your idea. You bring something you&apos;ve been meaning to build &mdash; and the willingness to push through a real learning curve. We ship it together, and you leave knowing how to ship the next one on your own. Early seats are priced below what they&apos;ll be later.
           </p>
 
           <AnimatePresence mode="wait">

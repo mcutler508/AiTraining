@@ -1,6 +1,6 @@
 export function Position() {
   return (
-    <section className="relative py-20 md:py-28 bg-[var(--color-accent)] text-[var(--color-accent-ink)] overflow-hidden">
+    <section id="position" className="relative py-20 md:py-28 bg-[var(--color-accent)] text-[var(--color-accent-ink)] overflow-hidden">
       {/* Grain texture — desaturated fractal noise, multiplied over the yellow to mute it */}
       <div
         aria-hidden
@@ -44,7 +44,7 @@ export function Position() {
               color: "var(--color-accent-ink)",
             }}
           >
-            <span>06</span>
+            <span>05</span>
             <span aria-hidden style={{ opacity: 0.35 }}>·</span>
             <span style={{ opacity: 0.7 }}>WHO THIS IS FOR</span>
           </div>
@@ -52,7 +52,7 @@ export function Position() {
           <blockquote>
             <p className="font-display text-[40px] md:text-[64px] leading-[1.05] tracking-[-0.02em] text-[var(--color-accent-ink)]">
               <span style={{ color: "var(--color-accent-ink)", opacity: 0.45 }}>&ldquo;</span>
-              You don&apos;t have to know how to code. You do have to know what you want to build.
+              You don&apos;t have to know how to code. You do have to be willing to learn.
               <span style={{ color: "var(--color-accent-ink)", opacity: 0.45 }}>&rdquo;</span>
             </p>
             <footer
@@ -66,9 +66,25 @@ export function Position() {
                 opacity: 0.7,
               }}
             >
-              — the one prerequisite
+              — the honest bar
             </footer>
           </blockquote>
+
+          {/* Commitment block — spells out what "willing to learn" means */}
+          <div className="mt-14 md:mt-20 max-w-[720px]">
+            <p
+              className="font-display text-[22px] md:text-[28px] leading-[1.4] tracking-[-0.01em]"
+              style={{ color: "var(--color-accent-ink)" }}
+            >
+              There&apos;s stuff to learn. New tools, some new words, a few ideas about how the internet actually works under the hood. That part&apos;s real &mdash; <span className="italic">there&apos;s no skipping it</span>. What&apos;s different here is you&apos;re not figuring it out alone at midnight. We do it together, on your project, in an order that makes sense.
+            </p>
+            <p
+              className="mt-6 md:mt-8 text-[15px] md:text-[17px] leading-[1.55]"
+              style={{ color: "var(--color-accent-ink)", opacity: 0.75 }}
+            >
+              Bring some focus and be willing to feel a little lost for the first hour. That&apos;s the whole ask.
+            </p>
+          </div>
         </div>
       </div>
     </section>

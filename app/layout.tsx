@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import { Fraunces, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ReadingProgress } from "@/components/motion/ReadingProgress";
+import { PageGrain } from "@/components/motion/PageGrain";
+import { SectionIndicator } from "@/components/motion/SectionIndicator";
+
+const SECTIONS = [
+  { id: "top",       num: "01", label: "The sessions" },
+  { id: "tension",   num: "02", label: "Why this exists" },
+  { id: "method",    num: "03", label: "How it runs" },
+  { id: "phases",    num: "04", label: "What you do" },
+  { id: "position",  num: "05", label: "Who it's for" },
+  { id: "manifesto", num: "06", label: "About me" },
+  { id: "ask",       num: "07", label: "Apply" },
+];
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -37,7 +50,12 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        <ReadingProgress />
+        <PageGrain />
+        <SectionIndicator sections={SECTIONS} />
+        {children}
+      </body>
     </html>
   );
 }

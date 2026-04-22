@@ -3,10 +3,9 @@ const INDEX = [
   { num: "02", label: "Why this exists", href: "#top" },
   { num: "03", label: "How it runs", href: "#method" },
   { num: "04", label: "What you do", href: "#phases" },
-  { num: "05", label: "Past projects", href: "#top" },
-  { num: "06", label: "Who it's for", href: "#top" },
-  { num: "07", label: "About me", href: "#manifesto" },
-  { num: "08", label: "Apply", href: "#ask" },
+  { num: "05", label: "Who it's for", href: "#position" },
+  { num: "06", label: "About me", href: "#manifesto" },
+  { num: "07", label: "Apply", href: "#ask" },
 ];
 
 export function FineFooter() {
