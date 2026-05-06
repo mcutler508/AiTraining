@@ -40,7 +40,19 @@ export function FineFooter() {
           </div>
 
           <div className="md:col-span-3">
-            <p className="kicker mb-5 text-[var(--color-ink-faint)]">Contact</p>
+            <p className="kicker mb-5 text-[var(--color-ink-faint)]">More</p>
+            <ul className="space-y-2 mb-6">
+              <li>
+                <a
+                  href="/stack"
+                  className="kicker flex items-center gap-3 hover:text-[var(--color-ink)] transition-colors"
+                >
+                  <span className="text-[var(--color-ink-faint)]">+</span>
+                  <span>The technical breakdown</span>
+                </a>
+              </li>
+            </ul>
+            <p className="kicker mb-3 text-[var(--color-ink-faint)]">Contact</p>
             <a
               href="mailto:hello@flowbuild.method"
               className="text-[15px] text-[var(--color-ink)] hover:text-[var(--color-accent)] transition-colors"

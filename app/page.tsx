@@ -3,6 +3,7 @@ import { Statement } from "@/components/sections/Statement";
 import { Tension } from "@/components/sections/Tension";
 import { Pipeline } from "@/components/sections/Pipeline";
 import { HowItWorks } from "@/components/sections/HowItWorks";
+import { StackTeaser } from "@/components/sections/StackTeaser";
 import { Position } from "@/components/sections/Position";
 import { Manifesto } from "@/components/sections/Manifesto";
 import { Ask } from "@/components/sections/Ask";
@@ -18,6 +19,7 @@ export default function Home() {
         <Tension />
         <Pipeline />
         <HowItWorks />
+        <StackTeaser />
         <Position />
         <Manifesto />
         <Ticker
